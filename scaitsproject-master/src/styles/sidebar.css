@@ -1,0 +1,167 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 209px;
+  height: 100vh;
+  background-color: #f6f8f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 160px;
+  height: auto;
+}
+
+.menu-section ul,
+.bottom-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+    font-family: 'intel', sans-serif;
+  gap: 10px;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  color: #666a6d;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.sidebar li i {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #a0a0a0;
+    font-family: 'intel', sans-serif;
+
+}
+.sidebar li:hover{
+  background: #cce0ec !important;
+}
+
+
+
+.sidebar-link {
+  text-decoration: none;
+  color: #666a6d;
+  display: block;
+  border-radius: 8px; 
+  margin-left: 0px;
+}
+
+.sidebar-link1 {
+  margin-left: 15px;
+}
+
+.sidebar-link:hover {
+  background-color: #f6f8f9;
+}
+
+.sidebar-link.active {
+  color: #252c32;
+  font-weight: 600;
+  margin-left: -2px;
+}
+
+.sidebar ul li svg.icon path {
+  fill: currentColor;
+}
+
+.dropdown-btn.active {
+  background-color: #D7EDFF;
+  color: #1809e2;
+  font-weight: 600;
+}
+
+.dropdown-btn.active svg,
+.dropdown-btn.active i,
+.dropdown-btn.active span {
+  color: #3425FF;
+  fill: f6f8f9;
+  
+}
+.dropdown-btn.active svg{
+   margin-left: 4px;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+/* arrow is black by default */
+.arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  color: #000; /* black arrow by default */
+  fill: #000;
+  
+}
+
+/* change to blue when dropdown is active */
+.dropdown-btn.active .arrow {
+  color: #3425FF;
+  fill: #3425FF;
+  /* transform: rotate(180deg); */
+}
+
+
+
+.dropdown-content-vertical {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.dropdown-content-vertical li {
+  font-size: 13px;
+  color: #666;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.dropdown-content-vertical li:hover {
+  background-color: #d6ecff;
+}
+
+.bottom-section {
+  margin-top: auto;
+  padding-bottom: 10px;
+  border-top: 1px solid #ddd;
+}
+
+@media(max-width: 640px) and (min-width: 360px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar-link.active {
+  color: #252c32;
+  font-weight: 600;
+  margin-left: 26px;
+}
+  
+  
+}

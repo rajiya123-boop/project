@@ -1,0 +1,285 @@
+.new-field-container {
+  margin: -21px;
+    margin-left: 236px;
+    width: 86%;
+    background-color: black;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+h2 {
+  display: block;
+  font-size: 1.0em;
+  height: 20px;
+  font-weight: bold;
+}
+ 
+ 
+ 
+/* Popup */
+.popup {
+  background: white;
+  width: 300px; /* exact small box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+ 
+}
+ 
+/* Header */
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: -10px;
+  font-family: 'intel', sans-serif;
+}
+ 
+.header h2 {
+  font-size: 30px;
+  margin: 0;
+  
+}
+ 
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #010308;
+  padding: 0;
+  line-height: 1;
+  position: relative;
+  font-weight: normal;
+}
+ 
+/* Form Rows */
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  font-family: 'intel', sans-serif;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: 'intel', sans-serif;
+}
+ 
+ 
+.form-group label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #0e0d0d;
+  font-family: 'intel', sans-serif;
+}
+ 
+/* Exact small and big box sizes */
+.form-group.small input {
+  width: 88px !important;
+ 
+  padding:10px;
+}
+ 
+.form-group.big  input{
+  width: 370px !important;
+  padding:10px;
+}
+/* .forms-group.big input {
+  width: 375px;
+} */
+ 
+ 
+.form-group.medium input{
+ 
+  width: 133px !important;
+  padding:10px;
+ 
+}
+ 
+ 
+input {
+  padding: 11px 8px;
+  border: 1px solid #111111;
+  color: #101828;
+ 
+  border-radius: 6px;
+  font-size: 14px;
+}
+input::placeholder{
+  color: #010308
+  ;
+}
+ 
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+ 
+.delete-btn {
+  background: none;
+  border: 1px solid red;
+  color: red;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+ 
+.edit-btn {
+  background: #3b28ff;
+  border: none;
+  color: white;
+  padding: 0px 120px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 360px) {
+.new-field-container{
+ min-width:360px;
+  height: 583px;
+  top: -146px;
+  right: 21px;
+}
+.popup{
+  max-width: 250px;
+  height: 394px;
+  top: 32px;
+  left: 8px;
+}
+
+
+  .headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: -22px;
+  margin-top: -22px;
+  font-family: 'intel', sans-serif;
+}
+.header h2 {
+  font-size: 5px;
+  margin-bottom: -50px;
+  
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #010308;
+  padding: 0;
+  line-height: 1;
+  position: relative;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+
+
+
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  /* gap: 0px; */
+  margin-top: 3px;
+  font-family: 'intel', sans-serif;
+}
+ 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: 'intel', sans-serif;
+ 
+
+}
+ 
+ 
+.form-group label {
+  font-size: 3px;
+  margin-bottom: 2px;
+  color: #0e0d0d;
+  font-family: 'intel', sans-serif;
+}
+ 
+/* Exact small and big box sizes */
+.form-group.small input {
+  width: 61px !important;
+ font-size: 11px;
+  padding:5px;
+}
+ 
+.form-group.big  input{
+  width: 230px !important;
+  padding:8px;
+  font-size: 11px;
+}
+/* .forms-group.big input {
+  width: 375px;
+} */
+ 
+ 
+.form-group.medium input{
+ 
+  width: 65px !important;
+  padding:5px;
+  font-size: 11px;
+ 
+}
+ 
+ 
+input {
+  padding: 5px 4px;
+  border: 1px solid #111111;
+  color: #101828;
+ 
+  border-radius: 6px;
+ 
+}
+input::placeholder{
+  color: #010308
+  ;
+}
+ 
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  gap:7px;
+}
+ 
+ 
+.delete-btn {
+  background: none;
+  border: 1px solid red;
+  color: red;
+  padding: 8px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: -10px;
+}
+ 
+.edit-btn {
+  background: #3b28ff;
+  border: none;
+  color: white;
+  padding: 0px 60px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+}
