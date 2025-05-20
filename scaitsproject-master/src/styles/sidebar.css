@@ -72,7 +72,7 @@
   color: #666a6d;
   display: block;
   border-radius: 8px; 
-  margin-left: 0px;
+  margin-left: 0px
 }
 
 .sidebar-link1 {
@@ -162,6 +162,12 @@
   font-weight: 600;
   margin-left: 26px;
 }
-  
+.sidebar-link {
+  text-decoration: none;
+  color: #666a6d;
+  display: block;
+  border-radius: 8px; 
+  margin-left: 25px;
+}
   
 }

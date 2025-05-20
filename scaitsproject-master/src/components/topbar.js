@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { NavLink } from 'react-router-dom'; // import NavLink for routing
 import '../styles/topbar.css';
 import mainLogo from '../assets/image.png';
+
 
 const Topbar = () => {
 const [menuOpen, setMenuOpen] = useState(false);
 const [isStudentOpen, setIsStudentOpen] = useState(false);
 
 const toggleMenu = () => {
-  setMenuOpen(!menuOpen);
-  if (menuOpen) {
-    setIsStudentOpen(false); // close nested dropdown when menu closes
-  }
-};
+    setMenuOpen(!menuOpen);
+    if (menuOpen) {
+      setIsStudentOpen(false); // close nested dropdown when menu closes
+    }
+  };
 
 const toggleStudentDropdown = () => {
   setIsStudentOpen(!isStudentOpen);
 };
 
+const handleLinkClick = () => {
+    setIsStudentOpen(false); // Close the student dropdown
+    setMenuOpen(false); // Close the main menu
+  };
+  
 return (
   <div className="topbar">
     <div className="topbar-upper">

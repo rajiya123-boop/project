@@ -1,15 +1,18 @@
 
   .new-field-container{
-    margin: -21px;
-    margin-left: 236px;
-    width: 86%;
-    background-color: black;
-    height: 1000px;
+   width: 100%;
+    height: 100vh;
+    margin: 0;
+    margin-top:46px;
+    margin-left: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
- 
+    background-color:black;
+    z-index:9999;
  
   }
  

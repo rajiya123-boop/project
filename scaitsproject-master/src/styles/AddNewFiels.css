@@ -152,7 +152,7 @@ input::placeholder{
 .popup{
   max-width: 250px;
   height: 394px;
-  top: 32px;
+  top: -18px;
   left: 8px;
 }
 
